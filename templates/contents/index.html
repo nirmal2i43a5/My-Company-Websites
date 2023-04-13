@@ -169,7 +169,39 @@
 
       </div>
 
-    </section><!-- End Values Section -->
+    </section>
+    <!-- End Values Section -->
+
+
+        <!-- ======= How we work ======= -->
+        <section id="values" class="values">
+
+          <div class="container" data-aos="fade-up">
+    
+            <header class="section-header">
+              <p>How We Work</p>
+            </header>
+    
+            <div class="row">
+              <div class="col-lg-2 d-flex">
+              </div>
+              <div class="col-lg-8 d-flex justify-content-center" data-aos="zoom-out" data-aos-delay="200" >
+                <img src="{% static 'assets/img/sdlc1.png' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-2 d-flex">
+              </div>
+    
+             
+    
+             
+    
+            </div>
+    
+          </div>
+    
+        </section>
+        <!-- how we work end -->
+        
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
@@ -181,7 +213,7 @@
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -191,7 +223,7 @@
             <div class="count-box">
               <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Projects</p>
               </div>
             </div>
@@ -201,7 +233,7 @@
             <div class="count-box">
               <i class="bi bi-headset" style="color: #15be56;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Hours Of Support</p>
               </div>
             </div>
@@ -211,7 +243,7 @@
             <div class="count-box">
               <i class="bi bi-people" style="color: #bb0852;"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Hard Workers</p>
               </div>
             </div>
@@ -437,70 +469,81 @@
     <!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
+  
     <section id="services" class="services">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Services</h2>
-          <p>Veritatis et dolores facere numquam et praesentium</p>
+          {% comment %} <h2>Services</h2> {% endcomment %}
+          <p>Our Services</p>
         </header>
 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Nesciunt Mete</h3>
+              {% comment %} <i class="ri-discuss-line icon"></i> {% endcomment %}
+              <img src="{% static 'assets/img/services/graphic_design.gif' %}" class="rounded-circle" alt="" style="width: 30%!important;">
+
+              <h3>Graphic Design</h3>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Eosle Commodi</h3>
+            <div class="service-box blue">
+              <img src="{% static 'assets/img/services/web_development.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="" >
+          
+              <h3>Web Development</h3>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Ledo Markt</h3>
+            <div class="service-box blue">
+              <img src="{% static 'assets/img/services/app_development.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
+
+              <h3>App Development</h3>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Asperiores Commodi</h3>
+           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box blue">
+              <img src="{% static 'assets/img/services/seo.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
+
+              <h3>
+                SEO Optimization</h3>
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
-          </div>
+          </div> 
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Velit Doloremque.</h3>
+            <div class="service-box blue">
+              <img src="{% static 'assets/img/services/email.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
+
+              <h3>
+                Email Marketing</h3>
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Dolori Architecto</h3>
+           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box blue">
+              <img src="{% static 'assets/img/services/promotion.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
+
+              <h3>
+                Social Media Marketing</h3>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
-          </div>
+          </div> 
 
         </div>
 
@@ -713,7 +756,7 @@
           <p>Check our latest work</p>
         </header>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        {% comment %} <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -722,7 +765,7 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> {% endcomment %}
 
         <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -1081,7 +1124,7 @@
     </section><!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
+    {% comment %} <section id="recent-blog-posts" class="recent-blog-posts">
 
       <div class="container" data-aos="fade-up">
 
@@ -1123,7 +1166,8 @@
 
       </div>
 
-    </section><!-- End Recent Blog Posts Section -->
+    </section> {% endcomment %}
+    <!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -1221,7 +1265,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Subscribe us to get weekely updates.</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -1255,19 +1299,21 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              {% comment %} <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li> {% endcomment %}
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Email Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Social Media Marketing</a></li>
+
             </ul>
           </div>
 
