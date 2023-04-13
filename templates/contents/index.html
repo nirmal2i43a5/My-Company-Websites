@@ -36,9 +36,9 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="{% static 'assets/img/logo.png '%}" alt="">
-        <span>Rising Softtech</span>
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="">
+        {% comment %} <span>Rising Softtech</span> {% endcomment %}
       </a>
 
       <nav id="navbar" class="navbar">
@@ -130,38 +130,46 @@
     </section><!-- End About Section -->
 
     <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
+    <section id="services" class="services">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Our Values</h2>
-          <p>Odit est perspiciatis laborum et dicta</p>
+          {% comment %} <h2>Our Values</h2> {% endcomment %}
+          <p>Value We Offer</p>
         </header>
 
         <div class="row">
+      
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <img src="{% static 'assets/img/values-1.png'%}" class="img-fluid" alt="">
-              <h3>Ad cupiditate sed est odio</h3>
-              <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+        
+
+          <div class="col-lg-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box blue">
+
+              <h3>Quality</h3>
+              <p>Delivering high-quality software that is reliable, efficient, and user-friendly.</p>
             </div>
           </div>
+          <div class="col-lg-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box blue">
 
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <img src="{% static 'assets/img/values-2.png'% }" class="img-fluid" alt="">
-              <h3>Voluptatem voluptatum alias</h3>
-              <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+              <h3>Customer-centricity</h3>
+              <p>Focusing on meeting the needs and requirements of customers, providing exceptional customer service, and offering support and resources to help customers succeed.</p>
             </div>
           </div>
+          <div class="col-lg-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box blue">
 
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-            <div class="box">
-              <img src="{% static 'assets/img/values-3.png' %}" class="img-fluid" alt="">
-              <h3>Fugit cupiditate alias nobis.</h3>
-              <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+              <h3>Security</h3>
+              <p>Providing secure software that protects customer data and safeguards against cyber threats.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box blue">
+
+              <h3>Transparency</h3>
+              <p>Being open and honest about the software's capabilities, limitations, and potential risks.</p>
             </div>
           </div>
 
@@ -487,8 +495,8 @@
               <img src="{% static 'assets/img/services/graphic_design.gif' %}" class="rounded-circle" alt="" style="width: 30%!important;">
 
               <h3>Graphic Design</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div>
 
@@ -497,8 +505,8 @@
               <img src="{% static 'assets/img/services/web_development.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="" >
           
               <h3>Web Development</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div>
 
@@ -507,8 +515,8 @@
               <img src="{% static 'assets/img/services/app_development.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
 
               <h3>App Development</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div>
 
@@ -518,8 +526,8 @@
 
               <h3>
                 SEO Optimization</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div> 
 
@@ -529,8 +537,8 @@
 
               <h3>
                 Email Marketing</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div>
 
@@ -540,8 +548,8 @@
 
               <h3>
                 Social Media Marketing</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              {% comment %} <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
           </div> 
 
@@ -1188,14 +1196,14 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street,<br>New York, NY 535022</p>
+                  <p>Kamal Pokhari,<br>Kathmandu 44600</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p> +977-9865542614<br>+01-346354</p>
+                  <p> +977 9865542614<br></p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -1281,10 +1289,11 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>Rising Softtech</span>
+              <img src="{% static 'assets/img/logo.png' %}" alt="">
+              {% comment %} <span>Rising Softtech</span> {% endcomment %}
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>Rising Softtech is a team of excels developers who offer real time  solutions to numerous organisations with better services and quality softwares.
+               </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -1320,11 +1329,11 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Kamal Pokhari <br>
+              Kathmandu 44600<br>
+              <br>
+              <strong>Phone:</strong> ++977 9865542614<br>
+              <strong>Email:</strong> info@risingsofttech.com<br>
             </p>
 
           </div>
@@ -1335,7 +1344,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Rising Softtech</span></strong>. All Rights Reserved
+         Copyright 2023 &copy; <strong><span>Rising Softtech</span></strong> | Powered by company
       </div>
      
     </div>
