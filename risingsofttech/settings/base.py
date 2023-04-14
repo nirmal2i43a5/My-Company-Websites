@@ -46,6 +46,7 @@ CUSTOM_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    'compressor'
     # 'crispy_forms',
     # 'crispy_bootstrap4',
     # 'django_filters',
@@ -153,6 +154,8 @@ STATICFILES_FINDERS = (
 
 COMPRESS_JS_FILTERS = ["compressor.filters.jsmin.JSMinFilter"]
 COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
+# COMPRESS_CACHE_BACKEND = 'default'
 COMPRESS_CSS_HASHING_METHOD = 'content'
 COMPRESS_CSS_FILTERS = [
     "compressor.filters.css_default.CssAbsoluteFilter",
