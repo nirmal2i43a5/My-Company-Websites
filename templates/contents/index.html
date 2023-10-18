@@ -28,11 +28,26 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/loader.css' %}" rel="stylesheet">
+
 
   {% endcompress %}
 </head>
 
 <body>
+  <div class="page-loader home-loader">
+    <div class="inner-loader">
+      <div class="spinner-border text-center" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only"></span>
+      </div>
+      <div class="spinner-grow text-center" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only"></span>
+      </div>
+      <div class="loader__figure" />
+    </div>
+  </div>
+</div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -49,7 +64,9 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           {% comment %} <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> {% endcomment %}
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          {% comment %} <li><a class="nav-link scrollto" href="#team">Team</a></li> {% endcomment %}
+          <li><a class="nav-link scrollto" href="#tools">Tools</a></li>
+
           {% comment %} <li><a href="blog.html">Blog</a></li> {% endcomment %}
           {% comment %} <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -542,10 +559,10 @@
 
            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box blue">
-              <img src="{% static 'assets/img/services/seo.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
+              <img src="{% static 'assets/img/services/analytics.gif' %}" class="rounded-circle " style="width: 30%!important;" alt="">
 
               <h3>
-                SEO Optimization</h3>
+                Data Analysis</h3>
               {% comment %} <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> {% endcomment %}
             </div>
@@ -895,20 +912,21 @@
     <!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    {% comment %} <section id="testimonials" class="testimonials">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Testimonials</h2>
-          <p>What they are saying about us</p>
+          <h2>Technologies</h2>
+          <p>Technology We Use</p>
         </header>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+        
+           <div class="testimonial-item">
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -923,69 +941,8 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+          
+            
 
           </div>
           <div class="swiper-pagination"></div>
@@ -993,10 +950,55 @@
 
       </div>
 
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section --> {% endcomment %}
+
+
+       <section id="tools" class="technologies">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Tools and Technologies</h2>
+          <p>Technology And Tools We Use For Products</p>
+        </header>
+         <br>
+          <br>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/python.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/django.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/fast-api.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/react.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/php.png' %}" class="img-fluid" alt=""></div>
+
+
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/laravel.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/aws.png' %}" class="img-fluid" alt=""></div>
+
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/pandas.svg' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/tableau.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/power-bi.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/snowflake.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/databricks.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/apache-spark.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/technologies/docker.png' %}" class="img-fluid" alt=""></div>
+
+
+
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    {% comment %} <section id="team" class="team">
 
       <div class="container" data-aos="fade-up">
 
@@ -1087,8 +1089,9 @@
 
       </div>
 
-    </section><!-- End Team Section -->
+    </section><!-- End Team Section --> {% endcomment %}
 
+{% comment %} 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
 
@@ -1114,7 +1117,7 @@
         </div>
       </div>
 
-    </section><!-- End Clients Section -->
+    </section><!-- End Clients Section --> {% endcomment %}
 
     <!-- ======= Recent Blog Posts Section ======= -->
     {% comment %} <section id="recent-blog-posts" class="recent-blog-posts">
@@ -1195,7 +1198,7 @@
                 <div class="info-box">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@risingsofttech.com<br>risingsofttech048@gmail.com</p>
+                  <p>info@iconichive.com<br>iconichive048@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -1304,7 +1307,7 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">SEO Optimization</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Data Analysis</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Email Marketing</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Social Media Marketing</a></li>
 
@@ -1314,11 +1317,11 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              Kamal Pokhari <br>
-              Kathmandu 44600<br>
+              Kritipur <br>
+              Kathmandu 44618<br>
               <br>
               <strong>Phone:</strong> ++977 9865542614<br>
-              <strong>Email:</strong> info@risingsofttech.com<br>
+              <strong>Email:</strong> info@iconichive.com<br>
             </p>
 
           </div>
@@ -1348,8 +1351,20 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+  
   {% endcompress  %}
 
+<script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var pageLoader = document.querySelector('.page-loader');
+    pageLoader.style.display = 'none';
+});
+</script>
 </body>
 
 </html>
